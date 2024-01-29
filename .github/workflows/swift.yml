@@ -16,9 +16,9 @@ jobs:
         xcode-version: '14.2' # Specify Xcode version here
 
     - name: Disable code signing
-    run: |
-      security set-key-partition-list -S apple-tool:,apple: -s -k ${{ secrets.MAC_KEYCHAIN_PASSWORD }} login.keychain
-      xcodebuild -project ITE-5334.xcodeproj -scheme ITE-5334 -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO build
+      run: |
+        security set-key-partition-list -S apple-tool:,apple: -s -k ${{ secrets.MAC_KEYCHAIN_PASSWORD }} login.keychain
+        xcodebuild -project ITE-5334.xcodeproj -scheme ITE-5334 -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO build
 
     - name: Build the project
       run: xcodebuild -scheme ITE-5334 -project ITE-5334.xcodeproj build
