@@ -15,9 +15,17 @@ jobs:
       with:
         xcode-version: '14.2' # Specify Xcode version here
 
+    - name: Create temporary keychain
+      run: |
+        security create-keychain -p ${{ secrets.MAC_KEYCHAIN_PASSWORD }} mytemp.keychain
+        security default-keychain -s mytemp.keychain
+        security unlock-keychain -p ${{ secrets.MAC_KEYCHAIN_PASSWORD }} mytemp.keychain
+        security set-keychain-settings -t 3600 -u mytemp.keychain
+
+
     - name: Disable code signing
       run: |
-        security set-key-partition-list -S apple-tool:,apple: -s -k ${{ secrets.MAC_KEYCHAIN_PASSWORD }} login.keychain
+        security set-key-partition-list -S apple-tool:,apple: -s -k ${{ secrets.MAC_KEYCHAIN_PASSWORD }} mytemp.keychain
         xcodebuild -project ITE-5334.xcodeproj -scheme ITE-5334 -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO build
 
     - name: Build the project
