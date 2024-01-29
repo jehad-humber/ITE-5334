@@ -16,6 +16,5 @@ jobs:
         xcode-version: '14.2' # Specify Xcode version here
 
     - name: Build the project
-      run: |
-        # Add commands to build your project, e.g.:
-        make build
+      run: xcodebuild -scheme ITE-5334 -project ITE-5334.xcodeproj build
+
