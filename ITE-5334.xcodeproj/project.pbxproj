@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		47C537FD2B67631600D571F9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C537FC2B67631600D571F9 /* main.swift */; };
+		47C5380D2B6AD85100D571F9 /* FunctionAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5380C2B6AD85100D571F9 /* FunctionAssignmentTests.swift */; };
+		47C538132B6AD9B100D571F9 /* FunctionAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C538122B6AD9B100D571F9 /* FunctionAssignment.swift */; };
+		47C538142B6AE4C000D571F9 /* FunctionAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C538122B6AD9B100D571F9 /* FunctionAssignment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,21 @@
 /* Begin PBXFileReference section */
 		47C537F92B67631600D571F9 /* ITE-5334 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ITE-5334"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C537FC2B67631600D571F9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		47C538052B6AD80200D571F9 /* FunctionAssignmentTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FunctionAssignmentTests.xctestplan; sourceTree = SOURCE_ROOT; };
+		47C5380A2B6AD85100D571F9 /* FunctionAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunctionAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47C5380C2B6AD85100D571F9 /* FunctionAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionAssignmentTests.swift; sourceTree = "<group>"; };
+		47C538122B6AD9B100D571F9 /* FunctionAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionAssignment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		47C537F62B67631600D571F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47C538072B6AD85100D571F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				47C537FB2B67631600D571F9 /* ITE-5334 */,
+				47C5380B2B6AD85100D571F9 /* FunctionAssignmentTests */,
 				47C537FA2B67631600D571F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				47C537F92B67631600D571F9 /* ITE-5334 */,
+				47C5380A2B6AD85100D571F9 /* FunctionAssignmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +74,18 @@
 			isa = PBXGroup;
 			children = (
 				47C537FC2B67631600D571F9 /* main.swift */,
+				47C538052B6AD80200D571F9 /* FunctionAssignmentTests.xctestplan */,
+				47C538122B6AD9B100D571F9 /* FunctionAssignment.swift */,
 			);
 			path = "ITE-5334";
+			sourceTree = "<group>";
+		};
+		47C5380B2B6AD85100D571F9 /* FunctionAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				47C5380C2B6AD85100D571F9 /* FunctionAssignmentTests.swift */,
+			);
+			path = FunctionAssignmentTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +108,23 @@
 			productReference = 47C537F92B67631600D571F9 /* ITE-5334 */;
 			productType = "com.apple.product-type.tool";
 		};
+		47C538092B6AD85100D571F9 /* FunctionAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47C5380E2B6AD85100D571F9 /* Build configuration list for PBXNativeTarget "FunctionAssignmentTests" */;
+			buildPhases = (
+				47C538062B6AD85100D571F9 /* Sources */,
+				47C538072B6AD85100D571F9 /* Frameworks */,
+				47C538082B6AD85100D571F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunctionAssignmentTests;
+			productName = FunctionAssignmentTests;
+			productReference = 47C5380A2B6AD85100D571F9 /* FunctionAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +136,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					47C537F82B67631600D571F9 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					47C538092B6AD85100D571F9 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -111,16 +157,37 @@
 			projectRoot = "";
 			targets = (
 				47C537F82B67631600D571F9 /* ITE-5334 */,
+				47C538092B6AD85100D571F9 /* FunctionAssignmentTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47C538082B6AD85100D571F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		47C537F52B67631600D571F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47C538132B6AD9B100D571F9 /* FunctionAssignment.swift in Sources */,
 				47C537FD2B67631600D571F9 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47C538062B6AD85100D571F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47C538142B6AE4C000D571F9 /* FunctionAssignment.swift in Sources */,
+				47C5380D2B6AD85100D571F9 /* FunctionAssignmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +342,38 @@
 			};
 			name = Release;
 		};
+		47C5380F2B6AD85100D571F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BSS78JSK2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appnapp.FunctionAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		47C538102B6AD85100D571F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BSS78JSK2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appnapp.FunctionAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -292,6 +391,15 @@
 			buildConfigurations = (
 				47C538012B67631600D571F9 /* Debug */,
 				47C538022B67631600D571F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47C5380E2B6AD85100D571F9 /* Build configuration list for PBXNativeTarget "FunctionAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47C5380F2B6AD85100D571F9 /* Debug */,
+				47C538102B6AD85100D571F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

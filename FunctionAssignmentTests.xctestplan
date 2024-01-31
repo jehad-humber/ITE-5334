@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "B704C3CA-C580-4DA6-BD1C-C28BB921F24D",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ITE-5334.xcodeproj",
+        "identifier" : "47C538092B6AD85100D571F9",
+        "name" : "FunctionAssignmentTests"
+      }
+    }
+  ],
+  "version" : 1
+}
