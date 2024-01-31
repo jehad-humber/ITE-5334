@@ -12,19 +12,19 @@ public class FunctionAssignment {
     }
     
     func add(_ a: Double, _ b: Double) -> Double {
-        return 0
+        return a+b
     }
     
     func subtract(_ a: Double, _ b: Double) -> Double {
-        return 0
+        return a-b
     }
     
     func multiply(_ a: Double, _ b: Double) -> Double {
-        return 0
+        return a*b
     }
     
     func divide(_ a: Double, _ b: Double) -> Double? {
-        return 0
+        return a/b
     }
     
     func celsiusToFahrenheit(_ celsius: Double) -> Double {
@@ -40,7 +40,16 @@ public class FunctionAssignment {
     }
     
     func identifyNumbers(_ numbers: [Int]) -> String {
-        "unknown"
+        let allEven = numbers.allSatisfy { $0 % 2 == 0 }
+        let allOdd = numbers.allSatisfy { $0 % 2 != 0 }
+
+        if allEven {
+            return "even"
+        } else if allOdd {
+            return "odd"
+        } else {
+            return "mixed"
+        }
     }
 
     func evaluateGrade(for score: Int) -> String {
