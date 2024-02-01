@@ -7,7 +7,7 @@
 
 import XCTest
 
-@testable import ITE_5334
+@testable import ITE_5334 // Replace with your actual module name
 
 class FunctionAssignmentTests: XCTestCase {
     var functionAssignment: FunctionAssignment!
